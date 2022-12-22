@@ -1,0 +1,18 @@
+Description: Replace shebang in script.
+Origin: Hilmar Preusse <hille42@web.de>
+Forwarded: Not needed. Patch is specific to Debian.
+Author: Hilmar Preusse <hille42@web.de>
+Last-Update: 20080422
+
+---
+ purifyeps |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/purifyeps
++++ b/purifyeps
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env perl
++#!/usr/bin/perl
+ 
+ ################################################################
+ # Convert an ordinary Encapsulated PostScript file (.eps) into #

@@ -1,0 +1,56 @@
+purifyeps (1.1-3) unstable; urgency=medium
+
+  * Remove unused patch.
+  * Fix Maintainers name.
+  * debhelper-compat (= 13).
+  * Standards-Version: 4.5.1, no changes needed.
+  * Lintian stuff:
+    - P: no-dep5-copyright
+    - I: no-dh-sequencer
+    - Add patch header to remaining patch
+    - Override "debian-watch-file-is-missing"
+
+ -- Hilmar Preusse <hille42@web.de>  Wed, 30 Jun 2021 23:36:19 +0200
+
+purifyeps (1.1-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 01:24:51 +0100
+
+purifyeps (1.1-2) unstable; urgency=low
+
+  * Remove deprecated dpatch and upgrade to packaging format "3.0 quilt".
+    Note: patch 01 was updated with "quilt refresh" to make
+    it apply cleanly.
+    (Thanks to Jari Aalto for the work.)
+  * Update to Standards-Version to 3.9.3 and debhelper to 9.
+  * Fix two lintian warnings
+
+ -- Hilmar Preuße <hille42@web.de>  Wed, 29 Feb 2012 08:40:00 -0500
+
+purifyeps (1.1-1) unstable; urgency=low
+
+  * New upstream release, determines path to mpost.fmp by itself
+  * Add depend on libfile-which-perl
+  * Updated Standards version, no changes needed
+  * dh_prep need debhelper > v7
+
+ -- Hilmar Preuße <hille42@web.de>  Sat, 04 Dec 2010 21:06:47 +0100
+
+purifyeps (1.0a-1) unstable; urgency=low
+
+  * New upstream release
+  * Hard code path to mpost.fmp into perl script (Closes: #570320)
+  * Updated Standards version
+    - add README.source
+    - added ${misc:Depends} to debian/control
+
+ -- Hilmar Preuße <hille42@web.de>  Thu, 18 Feb 2010 18:40:07 +0100
+
+purifyeps (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #434360)
+
+ -- Hilmar Preuße <hille42@web.de>  Tue, 22 Apr 2008 15:10:31 +0200
